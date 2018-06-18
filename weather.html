@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WeatherNow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+   
+       <div id="mainInfo">
+            <h1 id="celsius">Loading...</h1>  
+            <div id="subInfo">
+                    <h2 id="city">Loading....</h2>
+                    <div class="separator"></div>
+                    <h3 id="weatherType">Loading...</h3>
+            </div>         
+        </div>
+        
+        <img src="" id="weatherIcon"/>
+        
+       <!-- <li id="wind"></li> -->
+
+    <script src="weatherAPI.js"></script>
+</body>
+
+</html>

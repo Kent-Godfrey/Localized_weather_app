@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    margin: 0px;
+    background: #fdfdfd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+#celsius {
+    position: relative;
+    left:20%;
+    font-size: 6.5em;
+    letter-spacing: 5px;
+}
+
+#city {
+    font-size: 2.5em;
+    margin: 0px 0px 2px 0px;
+    letter-spacing: 1.5px;  
+}
+
+#weatherType {
+    font-size: 2.0em;
+    margin: 0px auto;
+}
+
+#mainInfo {
+    height:100vh;
+    width:50%;
+    background: #323337;
+    float:left;
+    color:#fdfdfd;
+}
+#subInfo {
+    position:relative;
+    float: right;
+    top:45%;
+    right: 5px;
+   
+}
+
+.separator {
+    height:4px;
+    background-color:#fdfdfd;
+} 
+#weatherIcon {
+    width:150px;
+    float:right;
+}
+
+#weatherType:first-letter{
+    text-transform:capitalize;
+}
