@@ -6,7 +6,7 @@ $(document).ready(function() {
             var lat = position.coords.latitude;
             var unitSwap = true;
         
-            const api = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=56d7c6952a2a981df6a74457815cf2bc';
+            const api = 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=<YOUR_OPENWEATHER_API_KEY';
 
             $.getJSON(api, function(data) {
                
