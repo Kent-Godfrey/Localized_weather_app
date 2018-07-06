@@ -3,7 +3,7 @@ window.onload = function() {
         navigator.geolocation.getCurrentPosition(function(position) {
             const long = position.coords.longitude;
             const lat = position.coords.latitude;
-            const unitSwap = true;
+            let unitSwap = true;
             const myKey = key.apiKey;
 
             fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + long + '&appid=' + myKey)
@@ -30,7 +30,8 @@ window.onload = function() {
                     document.getElementById("pressure").innerHTML = pressure;
                     document.title = "Weather Now - " + city;
 
-                    document.getElementById("celsius").click(function() {
+                    document.getElementById("celsius").onclick = (function() {
+
                         if (unitSwap === false) {
                             document.getElementById("celsius").innerHTML = fahrenheit;
                             unitSwap = true;
